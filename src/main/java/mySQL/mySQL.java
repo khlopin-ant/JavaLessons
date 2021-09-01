@@ -40,6 +40,7 @@ public class mySQL {
             String sqlSelectAll = "SELECT * FROM test_table";
             ResultSet resultSet = statement.executeQuery(sqlSelectAll);
 
+            
             while (resultSet.next()){
                 String name = resultSet.getString("name");
                 Integer id = resultSet.getInt("id");
