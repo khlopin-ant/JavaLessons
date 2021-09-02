@@ -22,17 +22,17 @@ public class mySQL {
             // добавить запись в таблицу test_table с именем John
             String sqlInsertJohn = "INSERT INTO `test_table` (`name`) VALUES ('John')";
             String sqlInsertVasya = "INSERT INTO `test_table` (`name`) VALUES ('Vasya')";
-            String sqlDeleteRec = "DELETE FROM `test_table` WHERE id=5";
+            String sqlDeleteRec = "DELETE FROM `test_table` WHERE id=20";
             String sqlDeleteVasya = "DELETE FROM `test_table` WHERE name = 'Vasya'";
-            String updateRec = "UPDATE test_table SET name = 'Vasya gvjgy' WHERE id = 18";
-            //statement.execute(sqlInsertJohn);
-
+            String updateRec = "UPDATE test_table SET name = 'Vasya gvjgy' WHERE id = 19";
+//            statement.execute(sqlInsertJohn);
+//
 //            statement.addBatch(sqlInsertJohn);
 //            statement.addBatch(sqlInsertVasya);
-
-
+//
+//
 //            statement.executeBatch();
-//          statement.execute(sqlDeleteRec);
+//            statement.execute(sqlDeleteRec);
 //            statement.execute(updateRec);
             // TODO: - чтение из БД SELECT
             // 1) получить все запись из таблицы
@@ -41,12 +41,13 @@ public class mySQL {
             ResultSet resultSet = statement.executeQuery(sqlSelectAll);
 
             
-            while (resultSet.next()){
-                String name = resultSet.getString("name");
-                Integer id = resultSet.getInt("id");
-                System.out.printf(id + " ");
-                System.out.printf(name + "\n");
-            }
+//            while (resultSet.next()){
+//                String name = resultSet.getString("name");
+//                Integer id = resultSet.getInt("id");
+//                System.out.printf(id + " ");
+//                System.out.printf(name + "\n");
+//            }
+
 
             // TODO: - изменение записи в БД UPDATE
             // переименовать имя в записи с id 1 на Vasya
